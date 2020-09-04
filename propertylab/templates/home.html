@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load cms_tags static %}
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+{% block content %}
+<!-- Header -->
+{% placeholder "header" %}  
+<!-- Portfolio Grid Section -->
+{% include 'portfolio.html'  %}
+
+<!-- About Section -->
+<section class="" id="about">
+   <div class="container">
+      <div class="item-page">         
+         <div itemprop="articleBody">
+            {% placeholder "content" %}
+         </div>
+      </div>       
+   </div>
+ </section>
+
+{% endblock content %}

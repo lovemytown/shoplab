@@ -1,0 +1,34 @@
+{% load cms_tags menu_tags static sekizai_tags %}
+<div class="moduletable">
+   <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+         <div class="navbar-header page-scroll">
+            <div class="topheader">
+               <a class="navbar-brand" href="#page-top">
+               <img class="pull-left img-responsive" src="{% static 'assets/img/logo.png' %}" alt="property website design" style="margin-right:10px; margin-top:-10px; width:13%" />
+               property<span style="color:#B2D940;">Lab</span>
+               </a>
+            </div>
+         </div>
+         <div class="navbar-header ">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" style="margin-top:-50px;">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+         </div>
+         <!-- /.navbar-header -->
+         <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav ">
+              
+               <!-- <li class="item-101 current active"><a href="/" >Home</a></li> -->
+                {% show_menu 0 100 100 100 %}
+              <!--  <li class="item-108"><a href="/free-mock-up" >Free mock-up</a></li>
+               <li class="item-109"><a href="/design" >Graphic design</a></li> -->
+             <!--   <li class="item-103"><a href="/about" >About</a></li> -->
+              <!--  <li class="item-104"><a href="/2016-01-20-08-11-04" >Contact</a></li> -->
+            </ul>
+         </div>
+      </div>
+   </nav>
+</div>

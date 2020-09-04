@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load cms_tags %}
+
+{% block title %}{% page_attribute "page_title" %}{% endblock title %}
+
+{% block content %}
+    {% placeholder "header" %}  
+	  <section class="innerpages" id="about">
+		<div class="container">
+			<div class="item-page">
+				<div class="page-header">
+				   <h2 itemprop="headline">{{ request.current_page.get_title }}</h2>
+				</div>
+				<div itemprop="articleBody">
+				   {% placeholder "content" %}
+				</div>
+			</div>		 
+		</div>
+	 </section>	 
+{% endblock content %}
