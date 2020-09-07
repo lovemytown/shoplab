@@ -15,10 +15,12 @@ admin.autodiscover()
 
 from .views import (
     home_page, 
+    enquiry_view, 
 )
 
 urlpatterns = [
     path('', home_page),
+    path('enquiry/', enquiry_view),
     url(r'^sitemap\.xml$', sitemap,
         {'sitemaps': {'cmspages': CMSSitemap}}),
 ]
